@@ -1,13 +1,13 @@
 name: ManagementGroups
 
-on:
-  push:
-    branches:
-      - "ManagementGroups"
+# on:
+#   push:
+#     branches:
+#       - "ManagementGroups"
 
 env:
-  location: 'eastus'
-  rootMg: 'Luke-Root'
+  location: 'eastus' 
+  rootMg: 'Tenant Root Group'
 
 jobs:
   AzureBicepDeploy:
