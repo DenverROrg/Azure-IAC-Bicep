@@ -1,10 +1,5 @@
 name: ManagementGroups
 
-# on:
-#   push:
-#     branches:
-#       - "ManagementGroups"
-
 env:
   location: 'eastus' 
   rootMg: 'Tenant Root Group'
