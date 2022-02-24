@@ -1,5 +1,7 @@
 name: ManagementGroups
 
+on: push
+
 env:
   location: 'eastus' 
   rootMg: 'Tenant Root Group'
