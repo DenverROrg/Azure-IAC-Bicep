@@ -29,5 +29,4 @@ jobs:
        with:
          inlineScript: |
            New-AzTenantDeployment -TemplateFile Standard-Deployments/CAF-Landing-Zone-MG/caf-mg-deploy.bicep -TemplateParameterFile Standard-Deployments/CAF-Landing-Zone-MG/parameters.json -Location ${{ env.location }}
-          #  az deployment tenant create -f AzureCloud/Root-MG/Root-MG-Test.json -l ${{ env.location }}
           azPSVersion: "latest"
