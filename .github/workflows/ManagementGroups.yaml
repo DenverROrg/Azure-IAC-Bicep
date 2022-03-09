@@ -20,7 +20,7 @@ jobs:
     #      az bicep build --file AzureCloud/Root-MG/Root-MG-Test.bicep
 
     -  name: Azure Login
-       uses: azure/login@v1
+       uses: azure/actions/login@v1
        with:
          creds: ${{ secrets.MSDN_SECRET }}
 
