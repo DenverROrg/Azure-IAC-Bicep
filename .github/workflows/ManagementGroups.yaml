@@ -29,4 +29,4 @@ jobs:
        with:
          inlineScript: |
            New-AzTenantDeployment -TemplateFile Standard-Deployments/CAF-Landing-Zone-MG/caf-mg-deploy.bicep -TemplateParameterFile Standard-Deployments/CAF-Landing-Zone-MG/parameters.json -Location ${{ env.location }}
-          azPSVersion: "latest"
+         azPSVersion: "latest"
