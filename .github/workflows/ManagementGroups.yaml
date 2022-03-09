@@ -24,9 +24,9 @@ jobs:
        with:
          creds: ${{ secrets.MSDN_SECRET }}
 
-    # -  name: Deploy Management Group template
-    #    uses: azure/CLI@v1
-    #    with:
-    #      inlineScript: |
-    #        az account show
-    #        az deployment tenant create -f AzureCloud/Root-MG/Root-MG-Test.json -l ${{ env.location }}
+    -  name: Deploy Management Group template
+       uses: azure/CLI@v1
+       with:
+         inlineScript: |
+           az account show
+          #  az deployment tenant create -f AzureCloud/Root-MG/Root-MG-Test.json -l ${{ env.location }}
