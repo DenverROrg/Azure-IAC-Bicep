@@ -15,18 +15,18 @@ jobs:
     -  name: Checkout Code
        uses: actions/checkout@v2
 
-    -  name: Build Management Group 
-       run: |
-         az bicep build --file AzureCloud/Root-MG/Root-MG-Test.bicep
+    # -  name: Build Management Group 
+    #    run: |
+    #      az bicep build --file AzureCloud/Root-MG/Root-MG-Test.bicep
 
     -  name: Azure Login
        uses: azure/login@v1
        with:
-         creds: ${{ secrets.MSDN_SECRET }}
+         creds: '${{ secrets.MSDN_SECRET }}''
 
-    -  name: Deploy Management Group template
-       uses: azure/CLI@v1
-       with:
-         inlineScript: |
-           az account show
-           az deployment tenant create -f AzureCloud/Root-MG/Root-MG-Test.json -l ${{ env.location }}
+    # -  name: Deploy Management Group template
+    #    uses: azure/CLI@v1
+    #    with:
+    #      inlineScript: |
+    #        az account show
+    #        az deployment tenant create -f AzureCloud/Root-MG/Root-MG-Test.json -l ${{ env.location }}
